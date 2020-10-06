@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ProductVC-->
         <scene sceneID="aqg-uj-UdK">
             <objects>
-                <viewController id="JdE-Jw-VyV" sceneMemberID="viewController">
+                <viewController id="JdE-Jw-VyV" customClass="productVC" customModule="_4082020SS1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJr-d9-o68">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,9 @@
                                                                 <state key="normal" title="-">
                                                                     <color key="titleColor" name="myColor"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="DecreaseButtonAction:" destination="JdE-Jw-VyV" eventType="touchUpInside" id="V8M-dB-InP"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lm5-VM-RN9">
                                                                 <rect key="frame" x="63.5" y="0.0" width="64" height="60"/>
@@ -92,6 +95,9 @@
                                                                 <state key="normal" title="+">
                                                                     <color key="titleColor" name="myColor"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="IncreaseButtonAction:" destination="JdE-Jw-VyV" eventType="touchUpInside" id="xO1-a3-DD4"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -121,6 +127,9 @@
                                                         <integer key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="OrderButtonAction:" destination="JdE-Jw-VyV" eventType="touchUpInside" id="3pG-iK-9cT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -164,6 +173,13 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="CollectionView" destination="wtu-1d-321" id="nBE-zI-D8m"/>
+                        <outlet property="CounterLabel" destination="lm5-VM-RN9" id="Tch-K2-8y1"/>
+                        <outlet property="DescriptionLabel" destination="Kfj-Pm-Rvx" id="OQP-7t-sph"/>
+                        <outlet property="PriceLabel" destination="CP4-T4-cnR" id="cwm-ct-grH"/>
+                        <outlet property="TitleLabel" destination="MmU-K2-41d" id="XUX-dZ-iNT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ac-H9-pkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

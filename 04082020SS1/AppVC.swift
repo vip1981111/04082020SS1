@@ -6,4 +6,19 @@
 //  Copyright © 1441 Mohammed Abdullah. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Firebase
+class AppVC: UIViewController {
+    
+    @IBAction func signOut(_ sender: UIButton) {
+        
+          print("signOut")
+         try? Auth.auth().signOut()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+//    print("signOut")
+//         try? Auth.auth().signOut()
+//
+}

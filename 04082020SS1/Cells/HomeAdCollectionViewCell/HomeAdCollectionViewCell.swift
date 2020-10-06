@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import SDWebImage
+class HomeAdCollectionViewCell : UICollectionViewCell {
 
-class HomeAdCollectionViewCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+ 
+    @IBOutlet weak var ImageView: UIImageView!
+    
+    func Update(AD: AdObject) {
+        
+        if let str = AD.ImageURL , let url = URL(string : str) {
+            
+            ImageView.sd_setImage(with: url, completed: nil)
+            self.ImageView.contentMode = .scaleAspectFill
+        }
+        
     }
+    
 
 }

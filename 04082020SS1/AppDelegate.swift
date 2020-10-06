@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+//        Firestore.firestore().collection("Users").document("l4ei1zMDeUbHAYLNmc0N").setData(["Name" :"Ali","NO" :"0568555575"])
+        
+//        Auth.auth().addStateDidChangeListener { (auth, user) in
+//            guard let User = user else {return}
+//            UserApi.GeUser(ID: User.uid) {(U:UserObject) in
+//                print(U.Name as Any)
+//
+//            }
+//        }
+        
+        
         return true
     }
 

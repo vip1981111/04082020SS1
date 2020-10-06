@@ -10,9 +10,25 @@ import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var ImageView: UIImageView!
+    
 
+    
+    func Update(url:String) {
+        guard let Url = URL(string: url) else { return }
+        self.ImageView?.sd_setImage(with: Url, completed: nil)
+        
+        
+        
+    }
+    
+    func Update(Image:UIImage) {
+        
+        self.ImageView.image = Image
+        
+        
+        
+    }
+    
+    
 }

@@ -1,0 +1,5 @@
+
+Showing Recent Errors Only
+
+Build target 04082020SS1 of project 04082020SS1 with configuration Debug
+

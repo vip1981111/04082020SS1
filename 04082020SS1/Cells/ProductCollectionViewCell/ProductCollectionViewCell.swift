@@ -10,9 +10,21 @@ import UIKit
 
 class ProductCollectionViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+   
+    
+    @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var Name: UILabel!
+    @IBOutlet weak var Price: UILabel!
+    
+    
+    func Update(produtut: ProductObject){
+        self.Name.text = produtut.Name
+        self.Price.text = produtut.Price?.description 
+        guard let imgString = produtut.ImageURLs?[0], let url = URL(string : imgString) else { return }
+              ImageView.sd_setImage(with: url, completed: nil)
+        
     }
+    
+    
 
 }

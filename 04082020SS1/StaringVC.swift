@@ -26,11 +26,6 @@ class StaringVC : UIViewController {
             }
         }
     }
-    
-    
-    
-    
-    
-    
+
     
 }
