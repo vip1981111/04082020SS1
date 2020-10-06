@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "np_product_1375589_5F6269-2.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "np_product_1375589_5F6269.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "np_product_1375589_5F6269-1.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
